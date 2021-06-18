@@ -41,7 +41,6 @@ main h2 {
     object-fit: cover;
     min-height: 80%;
     height: 100%;
-    
 }
 
 .card-body {
@@ -89,4 +88,28 @@ main h2 {
 
 .testimonials-container .card-body {
     display: inline;
+}
+
+.testimonials-container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.testimonials-container .col-md-8 {
+    padding-left: 10px;
+}
+
+.card-body > h5 {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right,
+                #03a1da 0,
+                #1b4ea1 10%,
+                #4a298c 20%,
+                #911c8d 30%,
+                #f21b91 40%,
+                #eb1b41 50%,
+                #fb702d 60%,
+                #f29a2e 70%,
+                #f2d22e 80%,
+                #18a34f 90%) 2;
 }
