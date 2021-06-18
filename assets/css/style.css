@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+
+/* --------------------------------------------- Centre content */
+.centre-content {
+    width: auto !important;
+}
+
 /* --------------------------------------------- Footer */
 footer nav {
     width: 100%;
