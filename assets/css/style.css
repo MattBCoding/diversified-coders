@@ -6,14 +6,11 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
-
 /* --------------------------------------------- Centre content */
 .centre-content {
     width: auto !important;
 }
 
-=======
 /* --------------------------------------------- SVG colors */
 #heart path:nth-child(1) {
     fill: #FF0000;
@@ -174,7 +171,6 @@ main h2 {
                 #18a34f 90%) 2;
 }
 
->>>>>>> b0edc23c5d8923f5ad69f2fd7991003cb0f97b1d
 /* --------------------------------------------- Contact Form */
 .main-container {
     min-height: calc(100vh - 70px - 70px);
