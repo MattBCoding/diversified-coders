@@ -1,0 +1,134 @@
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes background_fade_in {
+    0% {
+        background-color: transparent;
+    }
+    90% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #212529;
+    }
+}
+
+@keyframes overlay {
+    0% {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+    }
+    90% {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+    }
+    100% {
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(8);
+    }
+    90% {
+        transform: scale(8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer, .navbar-toggler, .navbar-collapse {
+    animation: 6s opacity ease-in-out forwards;
+}
+
+.navbar  {
+    animation: 6s background_fade_in ease-in-out forwards;
+}
+
+#heart {
+    animation: 5s scale forwards;
+    overflow: visible;
+}
+
+.heart-wrapper {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    animation: 5s overlay forwards;
+    overflow: visible;
+}
+
+@keyframes move {
+    0% {
+        stroke-opacity: 1;
+        fill-opacity: 0;
+        transform: rotateZ(300deg) scale(0.2);
+    }
+    70% {
+        stroke-opacity: 1;
+        fill-opacity: 0;
+        transform: rotateZ(0deg) scale(1);
+    }
+    100% {
+        stroke-opacity: 0;
+        fill-opacity: 1;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+#heart path {
+    animation: 5s move forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotateZ(300deg) scale(0.2);
+    fill-opacity: 0;
+}
+
+#heart path:nth-child(1) {
+    fill: #FF0000;
+}
+
+#heart path:nth-child(2) {
+    fill: #FF7F00;
+    animation-delay: 0.2s;
+}
+
+#heart path:nth-child(3) {
+    fill: #FFFF00;
+    animation-delay: 0.4s;
+}
+
+#heart path:nth-child(4) {
+    fill: #00FF00;
+    animation-delay: 0.6s;
+}
+
+#heart path:nth-child(5) {
+    fill: #0000FF;
+    animation-delay: 0.8s;
+}
+
+#heart path:nth-child(6) {
+    fill: #9400D3;
+    animation-delay: 1s;
+}
