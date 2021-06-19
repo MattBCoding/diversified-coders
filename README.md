@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome MattBCoding,
@@ -57,3 +59,4 @@ We continually tweak and adjust this template to help give you the best experien
 ---
 
 Happy coding!
+>>>>>>> 398b5ee6cfcf2c7197e438cfb389f758151f2b92
