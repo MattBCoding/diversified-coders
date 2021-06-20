@@ -17,7 +17,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/svg-animation.css">
+    <script>
+        if (sessionStorage.getItem('loaded') == null) {
+            sessionStorage.setItem('loaded', true);
+            var head = document.getElementsByTagName('HEAD')[0];
+
+            var link = document.createElement('link');
+
+            link.rel = 'stylesheet';
+
+            link.type = 'text/css';
+
+            link.href = './assets/css/svg-animation.css';
+
+            head.appendChild(link);
+        }
+
+    </script>
     <title>Diversify - Home</title>
 </head>
 
