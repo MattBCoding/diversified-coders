@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    font-family: Roboto, sans-serif;
+}
+
 /* --------------------------------------------- Centre content */
 .centre-content {
     width: auto !important;
