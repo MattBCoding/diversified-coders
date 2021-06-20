@@ -48,11 +48,6 @@ main h2 {
 }
 
 .event-image-container .card-body {
-  display: none;
-}
-
-.event-image-container .card:hover .card-body {
-  display: inline;
   border-top: 10px solid;
   border-image: linear-gradient(to right,
               #03a1da 0,
@@ -92,6 +87,7 @@ border-image:linear-gradient(to right,
 .testimonials-container > .card {
   height: auto;
   width: auto;
+  border: none;
 }
 
 .testimonials-container .card-body {
@@ -121,4 +117,14 @@ border-image:linear-gradient(to right,
               #f29a2e 70%,
               #f2d22e 80%,
               #18a34f 90%) 2;
+}
+
+@media (hover) {
+  .event-image-container .card-body {
+    display: none;
+  }
+  
+  .event-image-container .card:hover .card-body {
+    display: inline;
+  }
 }
