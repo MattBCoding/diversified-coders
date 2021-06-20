@@ -87,6 +87,7 @@ border-image:linear-gradient(to right,
 .testimonials-container > .card {
   height: auto;
   width: auto;
+  border: none;
 }
 
 .testimonials-container .card-body {
