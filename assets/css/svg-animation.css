@@ -1,3 +1,20 @@
+@keyframes move {
+    0% {
+        stroke-opacity: 1;
+        fill-opacity: 0;
+        transform: rotateZ(300deg) scale(0.2);
+    }
+    70% {
+        stroke-opacity: 1;
+        fill-opacity: 0;
+        transform: rotateZ(0deg) scale(1);
+    }
+    100% {
+        stroke-opacity: 0;
+        fill-opacity: 1;
+        transform: rotateZ(0deg) scale(1);
+    }
+}
 
 @keyframes opacity {
     0% {
@@ -28,48 +45,51 @@
         width: 100vw;
         height: 100vh;
         background-color: white;
+        left: 0;
     }
     90% {
         width: 100vw;
         height: 100vh;
         background-color: white;
+        left: 0;
     }
     100% {
         background-color: transparent;
-        width: 70px;
-        height: 70px;
-        padding: 10px;
+        width: 50px;
+        height: 50px;
     }
 }
 
 @keyframes scale {
     0% {
-        transform: scale(8);
+        width: 90vw;
+        height: 90vh;
     }
     90% {
-        transform: scale(8);
+        width: 90vw;
+        height: 90vh;
+        margin-left: 0;
+        margin-top: 0;    
     }
     100% {
-        transform: scale(1);
+        width: 50px;
+        height: 50px;
+        margin-left: 5rem;
+        margin-top: 1.5rem;    
     }
 }
 
-footer, .navbar-toggler, .navbar-collapse {
-    animation: 6s opacity ease-in-out forwards;
+.navbar-brand {
+    height: 64px;
+    width: 50px;
 }
 
 .navbar  {
-    height: 70px;
-    animation: 6s background_fade_in ease-in-out forwards;
+    animation: 4s background_fade_in ease-in-out forwards;
 }
 
-.banner-image {
-    animation: 6s opacity ease-in-out forwards;
-}
-
-#heart {
-    animation: 5s scale forwards;
-    overflow: visible;
+.navbar-toggler, .navbar-collapse {
+    animation: 4s background_fade_in ease-in-out forwards;
 }
 
 .heart-wrapper {
@@ -79,62 +99,28 @@ footer, .navbar-toggler, .navbar-collapse {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: white;
-    animation: 5s overlay forwards;
+    background-color: transparent;
+    animation: 3.5s overlay ease-in-out forwards;
     overflow: visible;
 }
 
-@keyframes move {
-    0% {
-        stroke-opacity: 1;
-        fill-opacity: 0;
-        transform: rotateZ(300deg) scale(0.2);
-    }
-    70% {
-        stroke-opacity: 1;
-        fill-opacity: 0;
-        transform: rotateZ(0deg) scale(1);
-    }
-    100% {
-        stroke-opacity: 0;
-        fill-opacity: 1;
-        transform: rotateZ(0deg) scale(1);
-    }
+#heart {
+    animation: 3.5s scale ease-in-out forwards;
+    overflow: visible;
 }
 
 #heart path {
-    animation: 5s move forwards;
+    animation: 3.5s move ease-in-out forwards;
     transform-origin: center;
     transform-box: fill-box;
     transform: rotateZ(300deg) scale(0.2);
     fill-opacity: 0;
 }
 
-#heart path:nth-child(1) {
-    fill: #FF0000;
+.banner-image {
+    animation: 4s opacity ease-in-out forwards;
 }
 
-#heart path:nth-child(2) {
-    fill: #FF7F00;
-    animation-delay: 0.2s;
-}
-
-#heart path:nth-child(3) {
-    fill: #FFFF00;
-    animation-delay: 0.4s;
-}
-
-#heart path:nth-child(4) {
-    fill: #00FF00;
-    animation-delay: 0.6s;
-}
-
-#heart path:nth-child(5) {
-    fill: #0000FF;
-    animation-delay: 0.8s;
-}
-
-#heart path:nth-child(6) {
-    fill: #9400D3;
-    animation-delay: 1s;
+footer {
+    animation: 4s opacity ease-in-out forwards;
 }
