@@ -7,7 +7,7 @@ document.getElementById('form')
 
     btn.value = 'Sending...';
 
-    const serviceID = 'default_service';
+    const serviceID = 'servicename';
     const templateID = 'template_3l4mdui';
 
     emailjs.sendForm(serviceID, templateID, this)
