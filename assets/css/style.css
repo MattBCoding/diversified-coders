@@ -53,6 +53,12 @@ body {
     min-height: 100vh
 }
 
+/* --------------------------------------------- Services Page */
+.accordion .accordion-item {
+    border-left: none;
+    border-right: none;
+}
+
 /* --------------------------------------------- Contact Form */
 .main-container {
     min-height: calc(100vh - 70px - 70px);
